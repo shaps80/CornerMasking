@@ -32,6 +32,21 @@ typedef struct SPXCornerRadii {
 extern SPXCornerRadii SPXCornerRadiiMake(CGFloat bottomLeft, CGFloat topLeft, CGFloat topRight, CGFloat bottomRight);
 extern bool SPXCornerRadiiEquals(SPXCornerRadii radii1, SPXCornerRadii radii2);
 
+/**
+ *  Adds support for different corner radii on a layer
+ */
 @interface CALayer (SPXMasking)
+
+/**
+ *  Sets/gets the corner radii for the layer
+ */
 @property (nonatomic, assign) SPXCornerRadii cornerRadii;
+
+/**
+ *  Returns the current path applied to mask for this layer
+ *
+ *  @return A UIBezier path if a mask is applied, nil otherwise
+ */
+- (UIBezierPath *)maskPath;
+
 @end

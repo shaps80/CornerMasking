@@ -45,6 +45,12 @@ bool SPXCornerRadiiEquals(SPXCornerRadii radii1, SPXCornerRadii radii2)
 
 @implementation CALayer (SPXMasking)
 
+- (UIBezierPath *)maskPath
+{
+  CAShapeLayer *maskLayer = (CAShapeLayer *)self.mask;
+  return [UIBezierPath bezierPathWithCGPath:maskLayer.path];
+}
+
 - (SPXCornerRadii)cornerRadii
 {
   NSValue *value = objc_getAssociatedObject(self, SPXCornerRadiiKey);
