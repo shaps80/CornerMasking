@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SPXMasking"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "SPXMasking is category on CALayer that allows you to specify different a corner radius for each corner of a CALayer."
   s.homepage     = "http://shaps.me/calayer-masking"
   s.license      = 'MIT (example)'
