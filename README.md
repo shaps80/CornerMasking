@@ -23,6 +23,13 @@ Installation
 
 To use the SPXMasking category in an app, just drag the category files into your project and import the header file into any class where you wish to make use of the SPXMasking functionality.
 
+Usage
+-------
+
+To use, simple invoke setCornerRadii on any CALayer class
+
+		self.view.layer.cornerRadii = SPXCornerRadiiMake(20, 60, 0, 120);
+
 
 SPXMasking Extensions
 ----------------------
@@ -30,6 +37,10 @@ SPXMasking Extensions
 This method will apply a corner radius to the specified corners of the CALayer
 
     - (void)setCornerRadii:(SPXCornerRadii)cornerRadii;
+		
+This method will return the current mask path. This is useful when needing to set shadowPath on a layer to optimize shadow drawing
+
+		- (UIBezierPath *)maskPath;
 
 This method is provided as a convenience for specifying corner radii
 
