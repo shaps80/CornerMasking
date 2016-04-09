@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://twitter.com/shaps"
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/shaps80/SPXMasking.git", :tag => s.version.to_s }
-  s.source_files  = 'Pod/Classes', '*.swift'
+  s.source_files  = 'Pod/Classes', '*.{h,m}'
   s.requires_arc = true
 end
