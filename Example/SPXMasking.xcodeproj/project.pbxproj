@@ -27,6 +27,8 @@
 		54534F941CB944E400BA67D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54534F961CB944E400BA67D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54534F9C1CB947CE00BA67D3 /* SPXMasking.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = SPXMasking.podspec; path = ../../SPXMasking.podspec; sourceTree = "<group>"; };
+		54534F9D1CB94D7800BA67D3 /* CALayer+SPXMasking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+SPXMasking.h"; sourceTree = "<group>"; };
+		54534F9E1CB94D7800BA67D3 /* CALayer+SPXMasking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SPXMasking.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		54534F7E1CB944E300BA67D3 = {
 			isa = PBXGroup;
 			children = (
+				54534F9F1CB94D7800BA67D3 /* Classes */,
 				54534F891CB944E400BA67D3 /* SPXMasking */,
 				54534F881CB944E400BA67D3 /* Products */,
 				9C83F86C3864251D02F89CF0 /* Pods */,
@@ -71,6 +74,16 @@
 				54534F9C1CB947CE00BA67D3 /* SPXMasking.podspec */,
 			);
 			path = SPXMasking;
+			sourceTree = "<group>";
+		};
+		54534F9F1CB94D7800BA67D3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54534F9D1CB94D7800BA67D3 /* CALayer+SPXMasking.h */,
+				54534F9E1CB94D7800BA67D3 /* CALayer+SPXMasking.m */,
+			);
+			name = Classes;
+			path = ../Pod/Classes;
 			sourceTree = "<group>";
 		};
 		9C83F86C3864251D02F89CF0 /* Pods */ = {
