@@ -7,8 +7,7 @@ SPXMasking is category on CALayer that allows you to specify different a corner 
 Supported OS & SDK Versions
 -----------------------------
 
-* Supported build target - iOS 7.1
-* Earliest supported deployment target - iOS 3.2
+* Earliest tested deployment target - iOS 8.0
 
 
 ARC Compatibility
@@ -37,7 +36,7 @@ SPXMasking Extensions
 This method will apply a corner radius to the specified corners of the CALayer
 
     - (void)setCornerRadii:(SPXCornerRadii)cornerRadii;
-		
+
 This method will return the current mask path. This is useful when needing to set shadowPath on a layer to optimize shadow drawing
 
 		- (UIBezierPath *)maskPath;
@@ -45,7 +44,13 @@ This method will return the current mask path. This is useful when needing to se
 This method is provided as a convenience for specifying corner radii
 
     extern SPXCornerRadii SPXCornerRadiiMake(CGFloat bottomLeft, CGFloat topLeft, CGFloat topRight, CGFloat bottomRight);
-    
+
 This method will compare two SPXCornerRadii structures and return YES if they are equal, NO otherwise
 
 	extern bool SPXCornerRadiiEquals(SPXCornerRadii radii1, SPXCornerRadii radii2);
+
+
+Example
+-------
+
+<img src="http://shaps.me/assets/img/blog/masking.jpg" width=160 height=284 alt="Masking Example" />

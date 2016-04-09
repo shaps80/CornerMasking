@@ -1,0 +1,14 @@
+PODS:
+  - SPXMasking (1.1.1)
+
+DEPENDENCIES:
+  - SPXMasking (from `../`)
+
+EXTERNAL SOURCES:
+  SPXMasking:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SPXMasking: aeffc9ebfc47ccace047e4431c1cbe97d5f68548
+
+COCOAPODS: 0.39.0
