@@ -110,10 +110,15 @@ bool SPXCornerRadiiEquals(SPXCornerRadii radii1, SPXCornerRadii radii2)
   return styles;
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
+
 - (void)layoutSublayers
 {
   [self spx_updateMaskPath];
 }
+
+#pragma clang diagnostic pop
 
 - (void)setCornerStyles:(SPXCornerStyles)cornerStyles
 {
